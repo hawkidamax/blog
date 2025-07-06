@@ -209,7 +209,7 @@ module.exports = function (eleventyConfig) {
       break;
     }
   });
-
+  
   return {
     templateFormats: ["md", "njk", "html", "liquid"],
 

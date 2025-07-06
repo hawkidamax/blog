@@ -1,18 +1,31 @@
 ---
-title: Title. Update me.
+title: Max says stuff
 layout: layouts/home.njk
-description: Description. Update me.
+description: Yet another attempt to curate a blog and speak to the world 
 image: https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg
 date: Last Modified
 ---
 
-<p>
-  This is a demo website based on 
-  <a href="https://www.industrialempathy.com/posts/eleventy-high-performance-blog/">eleventy-high-performance-blog</a>.
+<h2>Intro</h2>
+<p>By its very nature, a vanity homepage is spectacularly uninteresting to most of its potential readership.</p>
+<p>With millions of pages tenuously linked in a dynamic, ever changing environment, everyone online has the power 
+to publish, but few have the power to inspire. The Hawkida site is my little corner of the web where I can do whatever 
+I please and be ignored by the majority of internet users who neither know, nor care that it exists. 
+<p>In a sea of irrelevance you found a reason to visit so I hope you'll find something that is in some way meaningful to you.
 </p>
 
-<div id="posts">
-  <h2>Posts</h2>
-  {% set postslist = collections.posts %}
-  {% include "postslist.njk" %}
+
+<div id="posts"> 
+  <h2>Latest posts</h2>
+  {% set postslist = collections.posts | reverse %}
+  
+  <ul>
+  {% for post in postslist.slice(0, 3) %}
+    <li>
+      <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+      <time  datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+    </li>
+  {% endfor %}
+  </ul>
 </div>
+
