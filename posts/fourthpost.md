@@ -8,10 +8,6 @@ layout: layouts/post.njk
 eleventyExcludeFromCollections: true
 ---
 
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
-
 ![An image](https://photos.app.goo.gl/AXKABcUbrw55pJnw9)![alt text](/img/squiggle.png)
 
 ## Section Header
@@ -21,3 +17,15 @@ Capitalize on low hanging fruit to identify a ballpark value added activity to b
 ## A sample GIF
 
 ![A sample GIF](https://thumbs.gfycat.com/EqualCreativeCowbird-max-1mb.gif)
+
+# Test SVG
+
+![Test Share SVG](/img/share.svg)
+
+# Test Relative Local Image
+
+![Test Share SVG](../../img/doener.jpg)
+
+# Test PNG
+
+![Png By @clipartmax.com](https://www.clipartmax.com/png/full/0-9896_film-clipart-free-to-use-public-domain-movie-clip-art-directors-board.png)
